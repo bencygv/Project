@@ -1,137 +1,156 @@
-# 📋 Template-Anleitung
+# [CAR SALES DATA ANALYSIS PROJECT] 🚀
 
-> **Für Kursteilnehmer*innen:** Diese Sektion nach dem Setup deines Projekts löschen!
+-- This project analyzes a car sales dataset to explore pricing, sales trends, resale values, efficiency trade-offs, and vehicle segmentation. The analysis also includes a predictive modelling to estimate car prices based on vehicle specification.--
 
-## So verwenden Sie dieses Template:
-Dieses Template hilft dir, dein Data Science Projekt effizient zu organisieren und zu dokumentieren. Es bietet eine gängige Struktur, um deine Arbeit zu planen, durchzuführen und zu präsentieren. Templates können in GitHub über den Button **"Use this template"** in der oberen rechten Ecke in ein eigenes Repository überführt werden. Nutze diese Vorlage als Inspiration und passe sie an dein Projekt an! 
+## 📊 Project Overview
 
-Neben einer grundlegenden Ordnerstruktur für deine Dateien und Notebooks, enthält dieses Template unter `.github\ISSUE_TEMPLATE` einige Vorlagen für GitHub Issues, die dir helfen, deine Aufgaben zu organisieren und den Fortschritt deines Projekts zu verfolgen.
+**Problem Statement:** 
+-- Understanding how different car features (engine size, horsepower, vehicle type, etc.) influence sales, pricing, and resale value. --
 
-Lies dir die Datei `PROJECT_SETUP.md` durch, um mehr über die Nutzung dieses Templates zu erfahren.
+**Goal:** 
+-- To uncover insights into market trends, vehicle design trade-offs, and build a predictive model to estimate car prices. 
+1. Car Pricing & Influencing Factors
+    * What factors influence car price most strongly?
+    * How does horsepower relate to price?
+    * Is Power_perf_factor correlated with resale value or sales?
+    * Do larger / more powerful cars sell better than smaller ones?
 
-Für dein Projekt kannst du die folgenden Abschnitte in der `README.md` Datei anpassen, um dein Projekt zu beschreiben und zu präsentieren. Lösche anschließend diese Anleitung.
+2. Sales & Market Trends
+    * Which manufacturers dominate sales volume?
+    * How do sales and prices trend over time with new launches (Latest_Launch)?
+    * What is the relationship between Price_in_thousands and Sales_in_thousands?
+    * Any pattern of sales linked to Latest_Launch year/month?
 
+3. Resale Value
+    * Which manufacturers/models retain value best (One_Year_Resale_Value vs Price_in_thousands)?
+    * Does vehicle type (Passenger vs Car) affect depreciation?
+    * Which manufacturers have the highest average resale values?
 
-# [DEIN PROJEKTTITEL HIER] 🚀
+4. Design & Efficiency Trade-offs
+    * How do price and fuel efficiency relate by make or model?
+    * Influence of design factors (Wheelbase, Width, Length, Curb_weight) on fuel efficiency.
+    * Trade-off between Engine_size and Fuel_efficiency.
 
-> Eine kurze, prägnante Beschreibung deines Data Science Projekts in 1-2 Sätzen.
+5. Vehicle Segmentation
+    * What is the distribution of vehicle types?
+    * Can we cluster vehicles into natural groups (economy, family, performance, luxury)?
 
-## 📊 Projektübersicht
+6. Predictive Modeling
+    * Can we build a predictive model to estimate a car’s price from its features? --
 
-**Problemstellung:** 
-<!-- Beschreibe das Problem, das du lösen möchtest -->
-
-**Ziel:** 
-<!-- Was ist das Hauptziel deines Projekts? -->
-
-**Methoden:** 
-<!-- Welche Techniken/Algorithmen verwendest du? -->
+**Methods:** 
+<!-- Exploratory Data Analysis (EDA), correlation analysiss, and regression modeling. -->
 
 ## 🎯 Key Findings
 
-<!-- Hier deine wichtigsten Erkenntnisse in 3-5 Bullet Points -->
-- 📈 **Erkenntnis 1:** Kurze Beschreibung
-- 🔍 **Erkenntnis 2:** Kurze Beschreibung  
-- 💡 **Erkenntnis 3:** Kurze Beschreibung
+<!-- Your main insights in 3–5 bullet points -->
+- 📈 **Finding 1:** Short description
+- 🔍 **Finding 2:** Short description  
+- 💡 **Finding 3:** Short description
 
-## 📁 Repository Struktur
+## 📁 Repository Structure
 
 ```
 ├── data/
-│   ├── raw/                    # Originaldaten
-│   └── processed/              # Bereinigte Daten
+│   ├── raw/                    # Original data
+│   └── processed/              # Cleaned Data
 ├── notebooks/                  # Jupyter Notebooks
-│   └── 01_exploration.ipynb    # Datenexploration
-├── src/dpp                     # Python Module
+│   └── 01_exploration.ipynb    # Data exploration
+├── src/dpp                     # Python Modules
 ├── test/                       # Unit Tests
-├── pyproject.toml              # Projektkonfiguration
-└── docs/                       # Zusätzliche Dokumentation
+├── pyproject.toml              # Project configuration
+└── docs/                       # Additional Documentation
 ```
 
-## 🔧 Verwendete Technologien
+## 🔧 Technologies Used
 
-**Programmiersprachen:**
-<!-- z.B. Python, R, SQL -->
+**Programming Languages:**
+<!-- Python-->
 
 **Libraries & Frameworks:**
-<!-- z.B. pandas, scikit-learn, matplotlib, etc. -->
+<!-- pandas, scikit-learn, matplotlib, numpy, seaborn -->
 
 **Tools:**
-<!-- z.B. Jupyter, Git, Docker, etc. -->
+<!-- Jupyter, Git, etc. -->
 
-## 📊 Daten
+## 📊 Data
 
-**Datenquelle:** 
-<!-- Woher kommen deine Daten? -->
+**Data Source:** 
+-- [Kaggle - Car Sales Dataset](https://www.kaggle.com/datasets/gagandeep16/car-sales/data) --
 
-**Datensatz-Größe:** 
-<!-- Anzahl Zeilen/Spalten, Dateigröße -->
+**Dataset Size:** 
+-- 157 rows × 16 columns, 16.02 kB --
 
-**Wichtige Features:** 
-<!-- Beschreibung der wichtigsten Variablen -->
+**Key Features:** 
+<!-- * Sales_in_thousands: Sales volume per model
+     * _year_resale_value: Resale value after one year 
+     * Price_in_thousands: Vehicle price 
+     * Engine_size, Horsepower, Fuel_capacity, Fuel_efficiency 
+     * Wheelbase, Width, Length, Curb_weight
+     * Manufacturer, Model, Latest_Launch, Power_perf_factor -->
 
-## 🤖 Methodik
+## 🤖 Methodology
 
 ### Data Preprocessing
-<!-- Kurze Beschreibung deiner Datenbereinigung -->
+<!-- Short description of your data cleaning -->
 
 ### Modeling Approach  
-<!-- Welche Modelle hast du getestet? -->
+<!-- Which models did you test? -->
 
 ### Evaluation
-<!-- Wie hast du die Ergebnisse bewertet? -->
+<!-- How did you evaluate the results? -->
 
-## 📈 Ergebnisse
+## 📈 Results
 
 **Model Performance:**
-<!-- Deine besten Metriken (Accuracy, RMSE, etc.) -->
+<!-- Your best metrics (Accuracy, RMSE, etc.) -->
 
-**Wichtigste Visualisierungen:**
-<!-- Verweis auf Key-Plots in deinen Notebooks -->
+**Key Visualizations:**
+<!-- Reference key plots in your notebooks -->
 
-## 🚀 Reproduzierbarkeit
+## 🚀 Reproducibility
 
 ### Setup
 ```bash
-# Repository klonen
-git clone [DEIN-REPO-LINK]
+# Clone Repository
+git clone [YOUR-REPO-LINK]
 cd [REPO-NAME]
 
-# Dependencies installieren
+# Install Dependencies
 uv sync
 ```
 
-### Ausführung
+### Execution
 ```bash
-# Notebooks in dieser Reihenfolge ausführen:
+# Run Notebooks in this order:
 # 1. notebooks/01_exploration.ipynb
 # 2. notebooks/02_preprocessing.ipynb  
 # 3. notebooks/03_modeling.ipynb
 # 4. notebooks/04_results.ipynb
 ```
 
+## 🎓 About this Project
 
-## 🎓 Über dieses Projekt
+**Context:** 
+<!-- As part of Data Analysis Portfolio Project with StackFuel. -->
 
-**Kontext:** 
-<!-- Im Rahmen welches Kurses/welcher Veranstaltung? -->
+**Timeframe:** 
+<!-- When did you complete the project? -->
 
-**Zeitraum:** 
-<!-- Wann hast du das Projekt durchgeführt? -->
+**Author:** 
+-- Bency George Varghese --
 
-**Autor:** 
-<!-- Dein Name -->
+## 📞 Contact
 
-## 📞 Kontakt
+**GitHub:** [@bencygv](https://github.com/bencygv)  
+**E-Mail:** bencygv@gmail.com  
+**LinkedIn:** [Your Profil](https://linkedin.com/in/
+your-profil)
 
-**GitHub:** [@DeinUsername](https://github.com/DeinUsername)  
-**E-Mail:** deine.email@beispiel.de  
-**LinkedIn:** [Dein Profil](https://linkedin.com/in/dein-profil)
+## 🙏 Acknowledgements
 
-## 🙏 Danksagungen
-
-<!-- Hier kannst du Personen oder Ressourcen erwähnen, die dir geholfen haben -->
+<!-- Mention people or resources that helped you -->
 
 ---
 
-**⭐ Wenn dir dieses Projekt gefällt, gib gerne einen Star!**
+**⭐ If you like this project, consider giving it a star!**
