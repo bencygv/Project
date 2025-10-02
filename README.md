@@ -1,14 +1,14 @@
 # [CAR SALES DATA ANALYSIS PROJECT] 🚀
 
--- This project analyzes a car sales dataset to explore pricing, sales trends, resale values, efficiency trade-offs, and vehicle segmentation. The analysis also includes a predictive modelling to estimate car prices based on vehicle specification.--
+This project analyzes a car sales dataset to explore pricing, sales trends, resale values, efficiency trade-offs, and vehicle segmentation. The analysis also includes a predictive modelling to estimate car prices based on vehicle specification.
 
 ## 📊 Project Overview
 
 **Problem Statement:** 
--- Understanding how different car features (engine size, horsepower, vehicle type, etc.) influence sales, pricing, and resale value. --
+Understanding how different car features (engine size, horsepower, vehicle type, etc.) influence sales, pricing, and resale value.
 
 **Goal:** 
--- To uncover insights into market trends, vehicle design trade-offs, and build a predictive model to estimate car prices. 
+To uncover insights into market trends, vehicle design trade-offs, and build a predictive model to estimate car prices. 
 1. Car Pricing & Influencing Factors
     * What factors influence car price most strongly?
     * How does horsepower relate to price?
@@ -36,10 +36,10 @@
     * Can we cluster vehicles into natural groups (economy, family, performance, luxury)?
 
 6. Predictive Modeling
-    * Can we build a predictive model to estimate a car’s price from its features? --
+    * Can we build a predictive model to estimate a car’s price from its features?
 
 **Methods:** 
-<!-- Exploratory Data Analysis (EDA), correlation analysiss, and regression modeling. -->
+<!-- Exploratory Data Analysis (EDA), correlation analysis, and regression modeling. -->
 
 ## 🎯 Key Findings
 
@@ -76,10 +76,10 @@
 ## 📊 Data
 
 **Data Source:** 
--- [Kaggle - Car Sales Dataset](https://www.kaggle.com/datasets/gagandeep16/car-sales/data) --
+Kaggle - Car Sales Dataset (https://www.kaggle.com/datasets/gagandeep16/car-sales/data)
 
 **Dataset Size:** 
--- 157 rows × 16 columns, 16.02 kB --
+157 rows × 16 columns, 16.02 kB
 
 **Key Features:** 
 <!-- * Sales_in_thousands: Sales volume per model
@@ -92,7 +92,8 @@
 ## 🤖 Methodology
 
 ### Data Preprocessing
-<!-- Short description of your data cleaning -->
+<!-- 1. Check for duplicate values and found that there was no duplicate values.
+     2. Replaced NaN values of various columns using MEDIAN or LINEAR REGRESSION -->
 
 ### Modeling Approach  
 <!-- Which models did you test? -->
@@ -138,7 +139,7 @@ uv sync
 <!-- When did you complete the project? -->
 
 **Author:** 
--- Bency George Varghese --
+Bency George Varghese
 
 ## 📞 Contact
 
