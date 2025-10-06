@@ -9,6 +9,7 @@ Understanding how different car features (engine size, horsepower, vehicle type,
 
 **Goal:** 
 To uncover insights into market trends, vehicle design trade-offs, and build a predictive model to estimate car prices. 
+
 1. Car Pricing & Influencing Factors
     * What factors influence car price most strongly?
     * How does horsepower relate to price?
@@ -22,7 +23,7 @@ To uncover insights into market trends, vehicle design trade-offs, and build a p
     * Any pattern of sales linked to Latest_Launch year/month?
 
 3. Resale Value
-    * Which manufacturers/models retain value best (One_Year_Resale_Value vs Price_in_thousands)?
+    * Which manufacturers/models retain value best (Year_Resale_Value vs Price_in_thousands)?
     * Does vehicle type (Passenger vs Car) affect depreciation?
     * Which manufacturers have the highest average resale values?
 
