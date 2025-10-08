@@ -1,14 +1,14 @@
-# [CAR SALES DATA ANALYSIS PROJECT] 🚀
+# [CAR SALES & PRICING ANALYSIS PROJECT] 🚀
 
-This project analyzes a car sales dataset to explore pricing, sales trends, resale values, efficiency trade-offs, and vehicle segmentation. The analysis also includes a predictive modelling to estimate car prices based on vehicle specification.
+This project analyzes a car sales dataset to identify key drivers of car prices, sales, and resale value. Extending the study by exploring design-efficiency trade-offs, and vehicle segmentation. The analysis also includes a predictive modelling to estimate car prices based on vehicle specification.
 
 ## 📊 Project Overview
 
 **Problem Statement:** 
-Understanding how different car features (engine size, horsepower, vehicle type, etc.) influence sales, pricing, and resale value.
+Understanding how different car features (engine size, horsepower, vehicle type, etc.) influence market outcomes: sales, pricing, and long-term resale value.
 
 **Goal:** 
-To uncover insights into market trends, vehicle design trade-offs, and build a predictive model to estimate car prices. 
+To uncover strategic market insights, analyze vehicle design trade-offs, and build a predictive model to estimate car prices. 
 
 1. Car Pricing & Influencing Factors
     * What factors influence car price most strongly?
@@ -18,17 +18,17 @@ To uncover insights into market trends, vehicle design trade-offs, and build a p
 
 2. Sales & Market Trends
     * Which manufacturers dominate sales volume?
-    * How do sales and prices trend over time with new launches (Latest_Launch)?
+    * How do sales and prices trend over time with new launches?
     * What is the relationship between Price_in_thousands and Sales_in_thousands?
-    * Any pattern of sales linked to Latest_Launch year/month?
+    * Any pattern of sales linked to launch year/month?
 
 3. Resale Value
-    * Which manufacturers/models retain value best (Year_Resale_Value vs Price_in_thousands)?
-    * Does vehicle type (Passenger vs Car) affect depreciation?
+    * Which manufacturers retain value best?
+    * Does vehicle type affect depreciation?
     * Which manufacturers have the highest average resale values?
 
 4. Design & Efficiency Trade-offs
-    * How do price and fuel efficiency relate by make or model?
+    * How do price and fuel efficiency relate by manufacturer?
     * Influence of design factors (Wheelbase, Width, Length, Curb_weight) on fuel efficiency.
     * Trade-off between Engine_size and Fuel_efficiency.
 
@@ -66,13 +66,13 @@ To uncover insights into market trends, vehicle design trade-offs, and build a p
 ## 🔧 Technologies Used
 
 **Programming Languages:**
-<!-- Python-->
+Python
 
 **Libraries & Frameworks:**
-<!-- pandas, scikit-learn, matplotlib, numpy, seaborn -->
+pandas, scikit-learn, matplotlib, numpy, seaborn
 
 **Tools:**
-<!-- Jupyter, Git, etc. -->
+Jupyter, Git, GitHub
 
 ## 📊 Data
 
@@ -83,12 +83,15 @@ Kaggle - Car Sales Dataset (https://www.kaggle.com/datasets/gagandeep16/car-sale
 157 rows × 16 columns, 16.02 kB
 
 **Key Features:** 
-<!-- * Sales_in_thousands: Sales volume per model
-     * _year_resale_value: Resale value after one year 
-     * Price_in_thousands: Vehicle price 
-     * Engine_size, Horsepower, Fuel_capacity, Fuel_efficiency 
-     * Wheelbase, Width, Length, Curb_weight
-     * Manufacturer, Model, Latest_Launch, Power_perf_factor -->
+    * Price_in_thousands: The vehicle's list price (in thousands).
+    * Sales_in_thousands: The volume of vehicles sold by model (in thousands).
+    * __year_resale_value: The estimated resale value of the car (in thousands).
+    * Manufacturer / Model / Vehicle_type: The manufacturer, model and the type of car.
+    * Horsepower / Engine_size: Key performance metrics influencing price and design.
+    * Fuel_efficiency / Fuel_capacity
+    * Curb_weight / Wheelbase / Length / Width: Physical design factors
+    * Latest_Launch: The date the model was most recently launched.
+    * Power_perf_factor: A proprietary calculated metric combining performance attributes.
 
 ## 🤖 Methodology
 
