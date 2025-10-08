@@ -91,13 +91,18 @@ Kaggle - Car Sales Dataset (https://www.kaggle.com/datasets/gagandeep16/car-sale
     * Fuel_efficiency / Fuel_capacity
     * Curb_weight / Wheelbase / Length / Width: Physical design factors
     * Latest_Launch: The date the model was most recently launched.
-    * Power_perf_factor: A proprietary calculated metric combining performance attributes.
+    * Power_perf_factor: Power Performance Factor.
 
 ## 🤖 Methodology
 
 ### Data Preprocessing
-<!-- 1. Check for duplicate values and found that there was no duplicate values.
-     2. Replaced NaN values of various columns using MEDIAN or LINEAR REGRESSION -->
+    1. Checked for duplicate values and found that there was none.
+    2. Renamed __year_resale_value column to Year_resale_value.
+    3. Converted object columns to categorical type.
+    4. Converted Latest_Launch object datatype to datetime.
+    5. Kept only rows that have fewer than 3 missing values.
+    
+    . Replaced NaN values of various columns using MEDIAN or LINEAR REGRESSION
 
 ### Modeling Approach  
 <!-- Which models did you test? -->
