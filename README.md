@@ -101,8 +101,9 @@ Kaggle - Car Sales Dataset (https://www.kaggle.com/datasets/gagandeep16/car-sale
     3. Converted object columns to categorical type.
     4. Converted Latest_Launch object datatype to datetime.
     5. Kept only rows that have fewer than 3 missing values.
-    
-    . Replaced NaN values of various columns using MEDIAN or LINEAR REGRESSION
+    6. Filled missing values in Price_in_thousands and Power_perf_factor with their medians.
+    7. Imputed missing values in Curb_weight, Fuel_efficiency, and Year_resale_value using Linear Regression based on selected features.
+
 
 ### Modeling Approach  
 <!-- Which models did you test? -->
